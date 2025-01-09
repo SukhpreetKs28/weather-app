@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form id="special-button">
+          <input type="text" id="city-input" placeholder="Enter a city..." />
+
+          <input type="submit" value="Search" />
+        </form>
+        <br />
+      </header>
+      <h1 id="city-name">London</h1>
+      <div id="today">
+        <p id="date-time">Tuesday 12:34</p>
+        <p>
+          <br />
+          Humidity: <strong>45%</strong>, Wind: <strong>2.4km/h</strong>
+        </p>
+
+        <h2>
+          <span class="current-temperature-value">☁️17°C </span>
+        </h2>
+      </div>
+      <section class="forecast-weather">
+        <ul>
+          <li>
+            Wed ⛅ <br />
+            <strong>22°</strong> - 11°
+          </li>
+          <li>
+            Thu 🌤️ <br />
+            <strong>22°</strong> - 13°
+          </li>
+          <li>Fri <br />🌦️ <strong>17°</strong> - 13°</li>
+          <li>
+            Sat 🌥️ <br />
+            <strong>19°</strong> - 11°
+          </li>
+          <li>
+            Sun ⛅ <br />
+            <strong>21°</strong> - 14°
+          </li>
+          <li>
+            Mon 🌦️ <br />
+            <strong>22°</strong> - 14°
+          </li>
+        </ul>
+      </section>
+      <br />
+      <footer>
+        <p>
+          This project was coded by
+          <a
+            href="https://www.linkedin.com/in/sukhpreet-sandhu-50670627b/"
+            target="_blank"
+            >Sukhpreet Sandhu.
+          </a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
